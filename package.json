@@ -1,0 +1,20 @@
+{
+  "name": "realtimetracker",
+  "version": "1.0.0",
+  "description": "A real time tracker application.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tracker",
+    "realTimeTracker"
+  ],
+  "author": "Mohit Upadhyay",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
+  }
+}
