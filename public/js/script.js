@@ -6,8 +6,16 @@ const socket = io();
 if(navigator.geolocation){
     navigator.geolocation.watchPosition((position)=>{
         const {latitude,longitude }= position.coords;
-        socket.emit("send-location",{latitude,longitude})
-        console.log("Sending location:", latitude, longitude);
+        const now = new Date();
+        const currentDate = now.toDateString();
+        const currentTime = now.toTimeString();
+        socket.emit("send-location",{
+            latitude,
+            longitude,
+            date: currentDate,
+            time: currentTime
+        })
+        console.log("Sending location:", latitude, longitude ,"Date:", currentDate, "Time:", currentTime);
     },(error)=>{
         console.log(error);
     },{
