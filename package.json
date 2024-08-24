@@ -4,7 +4,8 @@
   "description": "A real time tracker application.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "vercel-start": "vercel dev"
   },
   "keywords": [
     "tracker",
