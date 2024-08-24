@@ -42,7 +42,8 @@ socket.on("receive-location",(data)=>{
         markers[id].setLatLng([latitude,longitude])
     }else{
         markers[id] = L.marker([latitude,longitude])
-        .bindPopup(`<b>User ${id}</b><br>Location: [${latitude}, ${longitude}]`)
+        .bindPopup(`<b>KNIT Sultanpur </b>
+                    <br>Location: [${latitude}, ${longitude}]`)
         .addTo(map);
     }
 })
