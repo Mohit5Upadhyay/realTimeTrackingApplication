@@ -4,7 +4,7 @@
   "description": "A real time tracker application.",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "build": "node app.js",
     "vercel-start": "vercel dev"
   },
   "keywords": [
