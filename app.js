@@ -9,7 +9,7 @@ const socketio = require("socket.io");
 const server = http.createServer(app);
 const io = socketio(server);
 
-// app.set("view engine", "ejs");
+app.set("view engine", "ejs");
 // app.set('views', path.join(__dirname, 'views'));
 
 app.use(cors());
@@ -30,6 +30,7 @@ io.on("connection", function (socket) {
 });
 
 app.get("/", function (req, res) {
+  console.log(path.join(__dirname, 'views', 'index.html'));
   // res.render("index");
   res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });

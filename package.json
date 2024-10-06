@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "build": "node app.js",
+    "start": "nodemon app.js",
     "vercel-start": "vercel dev"
   },
   "keywords": [
@@ -17,6 +18,7 @@
     "cors": "^2.8.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
+    "nodemon": "^3.1.7",
     "socket.io": "^4.7.5"
   }
 }
