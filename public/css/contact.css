@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 12px;               
+}
+
+::-webkit-scrollbar-track {
+    background: #e2e8f0;      
+    border-radius: 6px;        
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4CAF50; 
+    border-radius: 6px;        
+    border: 2px solid #e2e8f0; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #FFEB3B; 
+}
+/* Firefox scrollbar customization */
+* {
+    scrollbar-width: thin;      
+    scrollbar-color: #4CAF50 #e2e8f0; }
+
+*::-webkit-scrollbar-thumb:active {
+    background-color: #FFEB3B;   
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.header-section {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-heading {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4rem;
+    font-weight:bold;
+    color: #4CAF50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.subheading {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 300;
+    max-width: 600px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.main-heading:hover {
+    color: #3e8e41;
+}
+
+.subheading:hover {
+    color: #666;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.form-container {
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    overflow: hidden;
+}
+
+.left-side {
+    background-color: #f0effc;
+    width: 50%;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-side h2 {
+    font-size: 30px;
+    color: #59c94d;
+    margin-bottom: 20px;
+    text-shadow: 1px 2px 2px black;
+    font-family: cursive;
+}
+
+.left-side .image-area img {
+    width: 20rem;
+    margin-bottom: 25px;
+    border-radius: 1rem;
+    box-shadow: 0 0 3px rgba(65, 60, 60, 0.832);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 3rem;
+    border-radius: 2rem;
+}
+
+.social-icons a i:hover {
+    box-shadow: 0px 0px 2px 2px rgb(44, 204, 95);
+    border-radius: 3rem;
+}
+
+.right-side {
+    width: 50%;
+    padding: 30px;
+}
+
+.right-side h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+form button {
+    background-color: #6d5dfc;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #5b4ae0;
+}
