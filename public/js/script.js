@@ -112,5 +112,6 @@ realTimeToggle.addEventListener('change', function () {
 //redirecting to the contact us page from the index page
 document.getElementById('contact-link').addEventListener('click', function(event) {
     event.preventDefault(); // Prevent the default link behavior
-    window.location.href = 'public/html/contact.html'; // Redirect to the contact page
+    window.location.href = '/html/contact.html'; // Redirect to the contact page
 });
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="/public/css/login.css">
+    <script defer src="/public/js/login.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="image-section">
+                <img src="/public/assets/login main.svg" alt="Person pointing towards form">
+            </div>
+            <div class="login-section">
+                <h1>Login to Your Account</h1>
+                <form id="loginForm">
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <span id="email-error" class="error-message"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                        <span id="password-error" class="error-message"></span>
+                    </div>
+                    <button type="submit" class="login-btn">Login</button>
+                </form>
+
+                <div class="social-login">
+                    <p>Or login with:</p>
+                    <div class="social-icons">
+                        <a href="#" class="google-btn"><i class="fab fa-google"></i> Google</a>
+                        <a href="#" class="twitter-btn"><i class="fab fa-twitter"></i> Twitter</a>
+                        <a href="#" class="linkedin-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    </div>
+                </div>
+
+                <p class="register-link">
+                    Don't have an account? <a href="register.html">Register here</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

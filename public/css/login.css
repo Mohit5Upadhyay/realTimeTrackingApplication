@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.image-section {
+    flex: 1;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.login-section {
+    flex: 1;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 5px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #45a049;
+}
+
+.social-login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-login p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.google-btn {
+    background-color: #db4437;
+}
+
+.twitter-btn {
+    background-color: #1DA1F2;
+}
+
+.linkedin-btn {
+    background-color: #0077b5;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.register-link a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
