@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="/public/css/login.css">
     <script defer src="/public/js/login.js"></script>
 </head>
+
 <body>
+
+    <header class="header-section">
+        <h1 class="main-heading">TRACKIVE</h1>
+        <p class="subheading">Your Ultimate Partner for Real-Time Tracking and Live Maps</p>
+    </header>
+
     <div class="container">
         <div class="form-container">
             <div class="image-section">
+                <p>Welcome Back..!</p>
                 <img src="/public/assets/login main.svg" alt="Person pointing towards form">
             </div>
             <div class="login-section">
@@ -30,19 +40,20 @@
                 </form>
 
                 <div class="social-login">
-                    <p>Or login with:</p>
+                    <p>------ Or login with ------</p><br>
                     <div class="social-icons">
-                        <a href="#" class="google-btn"><i class="fab fa-google"></i> Google</a>
-                        <a href="#" class="twitter-btn"><i class="fab fa-twitter"></i> Twitter</a>
-                        <a href="#" class="linkedin-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="#"><i class='bx bxl-instagram' style='color:#b92169'></i></a>
+                        <a href="#"><i class='bx bxl-youtube' style='color:#ff0000'></i></a>
+                        <a href="#"><i class='bx bxl-facebook-circle' style='color:#1877f2'></i></a>
+                        <a href="#"><i class='bx bxl-twitter' style='color:#1da1f2'></i></a>
                     </div>
                 </div>
-
                 <p class="register-link">
-                    Don't have an account? <a href="register.html">Register here</a>
+                    Don't have an account? <a href="/html/register.html" id="register-link">Register here</a>
                 </p>
             </div>
         </div>
     </div>
 </body>
+
 </html>

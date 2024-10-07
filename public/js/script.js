@@ -115,3 +115,9 @@ document.getElementById('contact-link').addEventListener('click', function(event
     window.location.href = '/html/contact.html'; // Redirect to the contact page
 });
 
+
+//redirecting to the contact us page from the index page
+document.getElementById('register-link').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default link behavior
+    window.location.href = '/html/registter.html'; // Redirect to the contact page
+});
