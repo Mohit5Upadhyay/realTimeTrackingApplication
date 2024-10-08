@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 12px;               
+}
+
+::-webkit-scrollbar-track {
+    background: #e2e8f0;      
+    border-radius: 6px;        
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4CAF50; 
+    border-radius: 6px;        
+    border: 2px solid #e2e8f0; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #FFEB3B; 
+}
+/* Firefox scrollbar customization */
+* {
+    scrollbar-width: thin;      
+    scrollbar-color: #4CAF50 #e2e8f0; }
+
+*::-webkit-scrollbar-thumb:active {
+    background-color: #FFEB3B;   
+}
+
+.header-section {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-heading {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4rem;
+    font-weight:bold;
+    color: #4CAF50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.subheading {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 300;
+    max-width: 600px;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.main-heading:hover {
+    color: #3e8e41;
+}
+
+.subheading:hover {
+    color: #666;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.image-section {
+    flex: 1;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section p{
+    font-family: cursive;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 10px;
+    letter-spacing: 1.5px;
+    color: #3e8e41;
+}
+
+.image-section p:hover{
+    text-decoration: underline;
+}
+
+.image-section img {
+    width: 90%;
+}
+
+.login-section {
+    flex: 1;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 5px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #45a049;
+}
+
+.social-login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-login p {
+    font-size: 1rem;
+    color: #131212dc;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    padding: 5px;
+    font-size: 2.5rem;
+    border-radius: 5px;
+}
+
+.social-icons a:hover{
+    border-bottom: 2px solid green;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.register-link a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
