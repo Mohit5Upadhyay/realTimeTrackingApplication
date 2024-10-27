@@ -41,3 +41,57 @@ server.listen(PORT, () => {
 });
 
 module.exports = app;
+// Initialize the Leaflet Map
+const map = L.map('map').setView([51.505, -0.09], 13); // Set default view to a location and zoom level
+
+// Initialize Heatmap Layer
+const heatmapLayer = L.heatLayer([], {
+  radius: 25,
+  maxOpacity: 0.8,
+  scaleRadius: true,
+}).addTo(map);
+
+// Function to Update Heatmap Data
+function updateHeatmap(data) {
+  const heatmapPoints = data.map(({ lat, lng, intensity }) => [lat, lng, intensity]);
+  heatmapLayer.setLatLngs(heatmapPoints);
+}
+
+// Customizable Radius and Opacity Controls
+document.getElementById("radius-slider").addEventListener("input", (event) => {
+  heatmapLayer.setOptions({ radius: event.target.value });
+});
+
+document.getElementById("opacity-slider").addEventListener("input", (event) => {
+  heatmapLayer.setOptions({ maxOpacity: event.target.value });
+});
+
+// Interactive Legend
+const legend = L.control({ position: "bottomright" });
+legend.onAdd = function () {
+  const div = L.DomUtil.create("div", "info legend");
+  div.innerHTML = "Heatmap Intensity Scale"; // Customize as needed
+  return div;
+};
+legend.addTo(map);
+
+// Zoom-Level Dependent Radius Adjustment
+map.on("zoomend", () => {
+  const zoomLevel = map.getZoom();
+  heatmapLayer.setOptions({ radius: zoomLevel * 2 });
+});
+
+// Real-Time Data Updates with WebSocket
+const socket = new WebSocket("wss://your_server_url");
+socket.onmessage = (event) => {
+  const data = JSON.parse(event.data);
+  updateHeatmap(data);
+};
+
+// Example Filtering Function
+function filterHeatmap(timeRange, category) {
+  const filteredData = data.filter(entry => {
+    return entry.time >= timeRange && entry.category === category;
+  });
+  updateHeatmap(filteredData);
+}
