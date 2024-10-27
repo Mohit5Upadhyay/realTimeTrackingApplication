@@ -1,0 +1,153 @@
+[33mcommit 0dac206d4868206cb4da7d530546a3414fa9751a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mheatmap[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Sanchita76 <cse2022022@rcciit.org.in>
+Date:   Mon Oct 28 03:34:52 2024 +0530
+
+    update files
+
+[33mcommit 0b4583955deb80290c5b6d0ea95e3430c2b67c06[m[33m ([m[1;31morigin/heatmap_add[m[33m)[m
+Merge: ab9793b 638ddd0
+Author: Mohit5Upadhyay <129863157+Mohit5Upadhyay@users.noreply.github.com>
+Date:   Fri Oct 11 17:03:13 2024 +0530
+
+    Merge pull request #42 from Ganeshmoorthii/feature/add-responsive-navigation
+    
+    Add Responsive Navigation with Hamburger Menu
+
+[33mcommit 638ddd0819231eb0dc761845f64f39f3e49987e8[m
+Merge: 0f1a5df ab9793b
+Author: Ganesha Moorthi. M <152759878+Ganeshmoorthii@users.noreply.github.com>
+Date:   Fri Oct 11 15:01:35 2024 +0530
+
+    Merge branch 'main' into feature/add-responsive-navigation
+
+[33mcommit ab9793b1f021c71314c59ef7792253f66486fb3c[m
+Merge: 53f38fa 960302e
+Author: Mohit5Upadhyay <129863157+Mohit5Upadhyay@users.noreply.github.com>
+Date:   Fri Oct 11 11:44:07 2024 +0530
+
+    Merge pull request #40 from T-Rahul-prabhu-38/main
+    
+    ✨added chatbot ✨
+
+[33mcommit 0f1a5dfc4f2747e480f3157d52977f6df971dd0a[m
+Author: Ganeshmoorthii <mgmoorthi2004@gmail.com>
+Date:   Fri Oct 11 08:47:09 2024 +0530
+
+    Added responsive navigation bar with hamburger menu and optimized mobile view.
+
+[33mcommit 960302eb2ef58e34f7417fb77a11dc3509ff7e68[m
+Author: t rahul prabhu <trahulprabhu38@gmail.com>
+Date:   Fri Oct 11 00:16:53 2024 +0530
+
+    done
+
+[33mcommit 53f38faf642dab0b13e03ac87fc6f00e409764cb[m
+Merge: de81dd6 55d80b5
+Author: Mohit5Upadhyay <129863157+Mohit5Upadhyay@users.noreply.github.com>
+Date:   Tue Oct 8 19:24:37 2024 +0530
+
+    Merge pull request #25 from dnyanesh99borse/main
+    
+    SUCCESSFULLY INTEGRATED THE USER REGISTRATION AND LOGIN PAGE TO THE WEBSITE
+
+[33mcommit 55d80b5bea8e7b42150f58831a851f8a9a71a09c[m
+Author: dnyanesh <borsednyanesh99@gmail.com>
+Date:   Tue Oct 8 03:32:10 2024 +0530
+
+    enhancing the registration form
+
+[33mcommit 7f56f8086593273e36293c23dcb49c3820fe351e[m
+Author: dnyanesh <borsednyanesh99@gmail.com>
+Date:   Tue Oct 8 03:25:13 2024 +0530
+
+    successfully integrated the user registration page
+
+[33mcommit 34cd6738076ccc4861e6aa40c48bc64c8fc7cc3f[m
+Author: dnyanesh <borsednyanesh99@gmail.com>
+Date:   Mon Oct 7 19:25:27 2024 +0530
+
+    activated the contact links of the home page
+
+[33mcommit de81dd6472db0c640c2aa6570449426d7876d1a3[m
+Merge: 06ea71a 1e0ed93
+Author: Mohit5Upadhyay <129863157+Mohit5Upadhyay@users.noreply.github.com>
+Date:   Mon Oct 7 17:21:57 2024 +0530
+
+    Merge pull request #18 from dnyanesh99borse/main
+    
+    SUCCESSFULLY ADDED THE INTERACTIVE CONTACT US FORM #14
+
+[33mcommit 2dc72589399fd24cfc7383dbf6d8e80bf67b11a5[m
+Author: dnyanesh <borsednyanesh99@gmail.com>
+Date:   Mon Oct 7 14:27:52 2024 +0530
+
+    SUCCESSFULLY ADDED THE INTERACTIVE CONTACT US FORM
+
+[33mcommit 1e0ed932c9c1c1bfa6c84424cc271349dfa438a9[m
+Author: dnyanesh <borsednyanesh99@gmail.com>
+Date:   Mon Oct 7 14:22:19 2024 +0530
+
+    SUCCESSFULLY ADDED THE INTERACTIVE CONTACT US FORM
+
+[33mcommit 06ea71acd99f9cd14aca640cb22ddfd47c2af8bf[m
+Merge: d9fa073 577c0a7
+Author: Mohit5Upadhyay <129863157+Mohit5Upadhyay@users.noreply.github.com>
+Date:   Sun Oct 6 19:42:55 2024 +0530
+
+    Merge pull request #12 from dnyanesh99borse/main
+    
+    Updating UI and implementing footer section
+
+[33mcommit 577c0a74136f50f0170a02ebc9a216c40f6ad202[m
+Author: dnyanesh <borsednyanesh99@gmail.com>
+Date:   Sun Oct 6 16:11:09 2024 +0530
+
+    SUCCESSFULLY ENHANCED OR UPDATED THE USER INTERFACE OF THE APPLICATION
+
+[33mcommit d9fa07341b1f257c908a90150ca9a48f2cb6183e[m
+Author: Mohit5Upadhyay <129863157+Mohit5Upadhyay@users.noreply.github.com>
+Date:   Mon Aug 26 11:26:10 2024 +0530
+
+    Added Readme File
+
+[33mcommit 0f625b749056f3463d8d16dda4c9c4c8e887dd0f[m
+Author: Mohit5Upadhyay <upadhyaym7060@gmail.com>
+Date:   Sun Aug 25 15:34:09 2024 +0530
+
+    added html file
+
+[33mcommit 98f754fca81db54170a229f839dc3a020444f89e[m
+Author: Mohit5Upadhyay <upadhyaym7060@gmail.com>
+Date:   Sun Aug 25 15:14:18 2024 +0530
+
+    added cors dependency
+
+[33mcommit 132d3b33a780b5e10e330c99a1e08ba3fa280ed6[m
+Author: Mohit5Upadhyay <upadhyaym7060@gmail.com>
+Date:   Sat Aug 24 13:40:19 2024 +0530
+
+    added build command
+
+[33mcommit 2abada56daeceee5d9f92a8557ca755c2fe4d133[m
+Author: Mohit5Upadhyay <upadhyaym7060@gmail.com>
+Date:   Sat Aug 24 13:20:42 2024 +0530
+
+    Added vercel.json
+
+[33mcommit 6e5fde8c5f280c369bef9c037028716296a99361[m
+Author: Mohit5Upadhyay <upadhyaym7060@gmail.com>
+Date:   Sat Aug 24 12:31:04 2024 +0530
+
+    Added something new
+
+[33mcommit 9ef05845f0cee4d989187df8219161bda75d4fcc[m
+Author: Mohit5Upadhyay <upadhyaym7060@gmail.com>
+Date:   Mon Aug 19 00:11:16 2024 +0530
+
+    added date & time
+
+[33mcommit 163143415b475845f3ce9047a204f9c91acb735a[m
+Author: Mohit5Upadhyay <upadhyaym7060@gmail.com>
+Date:   Sun Aug 18 23:52:49 2024 +0530
+
+    initial commit
