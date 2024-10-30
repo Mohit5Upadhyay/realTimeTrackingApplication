@@ -20,6 +20,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/heatmap.js@2.0.5/heatmap.min.js"></script>
+<script src="https://unpkg.com/leaflet-heatmap/leaflet-heatmap.min.js"></script>
+
   </head>
 
   <body>
@@ -71,6 +76,14 @@
           <input type="checkbox" id="real-time-toggle" checked />
           Real-Time Tracking
         </label>
+<!-- Radius and Opacity Sliders -->
+    <label for="radius-slider">Radius:</label>
+    <input type="range" id="radius-slider" min="1" max="50" value="25" />
+
+    <label for="opacity-slider">Opacity:</label>
+    <input type="range" id="opacity-slider" min="0.1" max="1" step="0.1" value="0.8" />
+  </div>
+</section>
       </div>
     </section>
 
@@ -174,6 +187,8 @@
 
     <!-- Local JavaScript -->
     <script src="js/script.js"></script>
+    <script src="/js/map.js"></script>
+
 
     <!-- Chatbot Integration -->
     <script>
