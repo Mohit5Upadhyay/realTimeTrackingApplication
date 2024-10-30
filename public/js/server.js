@@ -791,6 +791,11 @@ const server = new WebSocket.Server({ port: 8080 });
 
 console.log('WebSocket server is running on ws://localhost:8080');
 
+server.on('error', (error) => {
+    console.error('WebSocket server error:', error);
+  });
+  
+
 server.on('connection', (socket) => {
   console.log('A client connected.');
 
