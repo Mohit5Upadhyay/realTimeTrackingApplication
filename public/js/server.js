@@ -4,7 +4,7 @@ exports.Server = exports.BaseServer = void 0;
 const qs = require("querystring");
 const url_1 = require("url");
 const base64id = require("base64id");
-const transports_1 = require("./transports");
+const transports_1 = require('E:/realTimeTrackingApplication/node_modules/engine.io/build/transports');
 const events_1 = require("events");
 const socket_1 = require("./socket");
 const debug_1 = require("debug");
