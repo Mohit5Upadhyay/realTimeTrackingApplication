@@ -27,7 +27,7 @@ app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8081;
 server.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
   console.log(`WebSocket server is running on ws://localhost:${PORT}/`);
