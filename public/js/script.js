@@ -14,7 +14,7 @@ if (navigator.geolocation) {
             date: currentDate,
             time: currentTime
         });
-        console.log("Sending location:", latitude, longitude, "Date:", currentDate, "Time:", currentTime);
+        console.log("Sending location: ", latitude, longitude, "Date: ", currentDate, "Time: ", currentTime);
     }, (error) => {
         console.error(error);
     }, {
@@ -69,7 +69,7 @@ function searchLocation() {
         fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${locationInput}`)
             .then(response => response.json())
             .then(data => {
-                if (data && data.length > 0) {
+                if (data && data.length >= 0) {
                     const lat = data[0].lat;
                     const lon = data[0].lon;
                     map.setView([lat, lon], 15);
