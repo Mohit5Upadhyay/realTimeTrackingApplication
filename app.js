@@ -29,8 +29,8 @@ app.get("/", function (req, res) {
 
 const PORT = process.env.PORT || 8081;
 server.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-  console.log(`WebSocket server is running on ws://localhost:${PORT}/`);
+  console.log(`Server is currently running on http://localhost:${PORT}`);
+  console.log(`WebSocket server is currently running on ws://localhost:${PORT}/`);
 });
 
 module.exports = app;
