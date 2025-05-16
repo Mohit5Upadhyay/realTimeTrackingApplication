@@ -148,7 +148,7 @@ nav {
   }
 }
 
-/* Container for the map and controls */
+/* Ensure the map container doesn't overlap */
 .map-container {
   position: relative;
   width: 100%;
@@ -159,12 +159,13 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 5rem; /* Add padding to ensure space for controls */
 }
 
 /* Map Styles */
 #map {
   width: 90%;
-  height: 80%;
+  height: 70%; /* Reduced height slightly to make room for controls */
   border-radius: 8px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 2px 2px #333;
@@ -217,14 +218,18 @@ nav {
 /* Map Controls */
 .controls {
   position: absolute;
-  transform: translate(25%, 18rem);
+  transform: translateX(-50%); /* Center horizontally by shifting left 50% of its own width */
+  left: 50%; /* Position the left edge at 50% of the parent width */
+  top: 82%; /* Adjust vertically to place below the map (based on map height of 70%) */
   display: flex;
   gap: 10px;
+  z-index: 1000; /* Ensure controls are above the map */
+  justify-content: center; /* Ensure children are centered within the flex container */
 }
 
 .controls button {
   padding: 10px 15px;
-  background-color: #4caf50;
+  background-color: #000000;
   color: white;
   border: none;
   border-radius: 4px;
@@ -234,25 +239,26 @@ nav {
 }
 
 .controls button:hover {
-  background-color: #ffeb3b;
+  background-color: #2aabf6;
   color: black;
 }
 
 .controls button:focus {
-  background-color: #78a111aa;
-  border: 1px solid rgb(255, 0, 0);
+  background-color: #f1ed12aa;
+  border: 1px solid #2aabf6(255, 0, 0);
   color: black;
 }
 
 .controls label {
-  color: #333;
+  color: #000000;
   font-weight: bold;
   display: flex;
   align-items: center;
 }
 
 .controls input[type="checkbox"] {
-  margin-right: 5px;
+  margin-right: 10px;
+  transform: scale(1.5);
 }
 
 /* Advantages Section Styling */
