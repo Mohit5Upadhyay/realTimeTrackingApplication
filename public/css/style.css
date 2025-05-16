@@ -418,3 +418,25 @@ nav {
     margin-top: 30px;
   }
 }
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .controls {
+    transform: translateX(-50%); /* Keep centering on mobile */
+    left: 50%;
+    top: 70%; /* Adjust for smaller map height on mobile */
+    flex-direction: column; /* Stack controls vertically on mobile */
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .map-container {
+    padding-bottom: 10rem; /* Keep padding for mobile */
+  }
+
+  #map {
+    height: 60%; /* Keep reduced map height on mobile */
+  }
+}
+
