@@ -418,3 +418,144 @@ nav {
     margin-top: 30px;
   }
 }
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode body {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode header {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.dark-mode .nav-links a {
+  color: #ffffff;
+}
+
+.dark-mode .logo {
+  color: #b7ff00;
+}
+
+.dark-mode .map-container {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .search-box input {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  border: 1px solid #555;
+}
+
+.dark-mode .search-box button {
+  background-color: #333;
+  color: #ffffff;
+}
+
+.dark-mode .search-box button:hover {
+  background-color: #555;
+}
+
+.dark-mode .controls button {
+  background-color: #333;
+  color: #ffffff;
+}
+
+.dark-mode .controls button:hover {
+  background-color: #555;
+}
+
+.dark-mode .controls label {
+  color: #ffffff;
+}
+
+.dark-mode .advantages-section {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .advantages-section h2 {
+  color: #ffffff;
+}
+
+.dark-mode .advantage-box {
+  background-color: #2a2a2a;
+  border: 1px solid #555;
+}
+
+.dark-mode .advantage-box h3 {
+  color: #b7ff00;
+}
+
+.dark-mode .advantage-box p {
+  color: #cccccc;
+}
+
+.dark-mode .footer {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.dark-mode .footer-logo h2 {
+  color: #b7ff00;
+}
+
+.dark-mode .footer-logo p {
+  color: #cccccc;
+}
+
+.dark-mode .footer-links h3 {
+  color: #b7ff00;
+}
+
+.dark-mode .footer-links ul li a {
+  color: #cccccc;
+}
+
+.dark-mode .footer-links ul li a:hover {
+  color: #b7ff00;
+}
+
+.dark-mode .footer-social h3 {
+  color: #b7ff00;
+}
+
+.dark-mode .social-icon {
+  color: #cccccc;
+}
+
+.dark-mode .social-icon:hover {
+  color: #b7ff00;
+}
+
+.dark-mode .footer-bottom {
+  background-color: #0a0a0a;
+}
+
+.dark-mode .footer-bottom p {
+  color: #cccccc;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+.dark-mode-btn:hover {
+  color: #b7ff00;
+}
+
+.dark-mode .dark-mode-btn {
+  color: #b7ff00;
+}

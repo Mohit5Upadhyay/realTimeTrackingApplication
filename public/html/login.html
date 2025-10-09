@@ -7,14 +7,20 @@
     <title>Login Form</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="/css/login.css">
-    <script defer src="/public/js/login.js"></script>
+    <script defer src="/js/login.js"></script>
+    <script defer src="/js/darkmode-shared.js"></script>
 </head>
 
 <body>
 
     <header class="header-section">
-        <h1 class="main-heading">TRACKIVE</h1>
+        <span class="logo" style="display:flex;align-items:center;gap:8px;">
+  <img src="/assets/trackive-logo.svg" alt="Trackive Logo" style="height:40px; width:auto; vertical-align:middle;" />
+</span>
         <p class="subheading">Your Ultimate Partner for Real-Time Tracking and Live Maps</p>
+        <button id="dark-mode-toggle" class="dark-mode-btn">
+          <i class='bx bx-moon'></i>
+        </button>
     </header>
 
     <div class="container">

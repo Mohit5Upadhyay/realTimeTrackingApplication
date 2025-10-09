@@ -215,3 +215,93 @@ h1 {
 .register-link a:hover {
     text-decoration: underline;
 }
+
+/* Dark Mode Styles */
+.dark-mode body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .header-section {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .main-heading {
+    color: #4CAF50;
+}
+
+.dark-mode .subheading {
+    color: #cccccc;
+}
+
+.dark-mode .container {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .form-container {
+    background-color: #2a2a2a;
+}
+
+.dark-mode .image-section {
+    background-color: #333;
+}
+
+.dark-mode .image-section p {
+    color: #4CAF50;
+}
+
+.dark-mode .login-section h1 {
+    color: #4CAF50;
+}
+
+.dark-mode .input-group label {
+    color: #ffffff;
+}
+
+.dark-mode .input-group input {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border: 1px solid #555;
+}
+
+.dark-mode .login-btn {
+    background-color: #333;
+    color: #ffffff;
+}
+
+.dark-mode .login-btn:hover {
+    background-color: #555;
+}
+
+.dark-mode .social-login p {
+    color: #cccccc;
+}
+
+.dark-mode .register-link a {
+    color: #4CAF50;
+}
+
+.dark-mode .register-link a:hover {
+    color: #66BB6A;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-btn {
+    background: none;
+    border: none;
+    color: #4CAF50;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: color 0.3s ease;
+}
+
+.dark-mode-btn:hover {
+    color: #66BB6A;
+}
+
+.dark-mode .dark-mode-btn {
+    color: #b7ff00;
+}
