@@ -1,0 +1,11 @@
+<svg width="160" height="40" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <!-- Location Pin -->
+    <ellipse cx="25" cy="20" rx="10" ry="14" fill="#4caf50" />
+    <ellipse cx="25" cy="20" rx="5.5" ry="7.5" fill="#fff" />
+    <!-- Checkmark inside pin -->
+    <path d="M21 20 l3 4 l6 -7" stroke="#b7ff00" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Brand name -->
+    <text x="45" y="27" font-family="'Poppins', Arial, sans-serif" font-size="24" font-weight="bold" fill="#222">Track<tspan fill="#4caf50">ive</tspan></text>
+  </g>
+</svg>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="icon" type="image/svg+xml" href="/assets/trackive-logo.svg" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Real Time Tracking Application</title>
@@ -31,15 +32,20 @@
     <!-- Header -->
     <header>
       <nav>
-        <div class="logo">Trackive</div>
+        <div class="logo" style="display:flex;align-items:center;gap:8px;">
+  <img src="/assets/trackive-logo.svg" alt="Trackive Logo" style="height:40px; width:auto; vertical-align:middle;" />
+</div>
         <ul class="nav-links">
           <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Why Us</a></li>
+          <li><a href="#about" class="nav-about">About</a></li>
+          <li><a href="#whyus" class="nav-whyus">Why Us</a></li>
           <li><a href="#">Features</a></li>
           <li><a href="/html/contact.html" id="contact-link">Contact</a></li>
           <li><a href="/html/login.html">Login</a></li>
         </ul>
+        <button id="dark-mode-toggle" class="dark-mode-btn">
+          <i class='bx bx-moon'></i>
+        </button>
         <div class="hamburger">
           <div class="bar"></div>
           <div class="bar"></div>
@@ -87,8 +93,59 @@
       </div>
     </section>
 
-    <section class="advantages-section">
-      <h2>Why Use Real-Time Tracking?</h2>
+    <!-- About Section -->
+    <section id="about" class="about-section" style="padding:60px 0 40px 0; background:#fff;">
+      <div class="container" style="max-width:1000px; margin:0 auto;">
+        <h2 style="text-align:center; color:#4caf50; font-size:2.5rem; margin-bottom:20px;">About Us</h2>
+        <p style="text-align:center; color:#333; font-size:1.2rem; max-width:800px; margin:0 auto 20px auto;">
+          TrackIVE is your trusted partner in real-time tracking and location services. Our mission is to provide accurate, reliable, and user-friendly solutions to help you manage your assets, vehicles, and loved ones with confidence and ease.
+        </p>
+        <p style="text-align:center; color:#333; font-size:1.1rem; max-width:800px; margin:0 auto;">
+          With a focus on innovation, security, and customer satisfaction, we strive to deliver the best tracking experience for both individuals and businesses. Join us on our journey to make the world more connected and secure.
+        </p>
+      </div>
+    </section>
+    <!-- Features Section -->
+    <section id="features" class="features-section" style="padding:60px 0 40px 0; background:#f5f7fa;">
+      <div class="container" style="max-width:1100px; margin:0 auto;">
+        <h2 style="text-align:center; color:#4caf50; font-size:2.5rem; margin-bottom:20px;">Features</h2>
+        <div class="features-grid" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:32px;">
+          <div class="feature-box" style="background:#fff; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.06); padding:32px 20px; text-align:center;">
+            <i class='bx bx-map-pin' style="font-size:2.5rem; color:#4caf50;"></i>
+            <h3 style="margin:16px 0 8px 0; color:#333;">Live Location Tracking</h3>
+            <p style="color:#555;">Track assets, vehicles, or people in real-time with high accuracy and reliability.</p>
+          </div>
+          <div class="feature-box" style="background:#fff; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.06); padding:32px 20px; text-align:center;">
+            <i class='bx bx-bell' style="font-size:2.5rem; color:#4caf50;"></i>
+            <h3 style="margin:16px 0 8px 0; color:#333;">Instant Alerts</h3>
+            <p style="color:#555;">Receive instant notifications for geofence breaches, low battery, or unusual activity.</p>
+          </div>
+          <div class="feature-box" style="background:#fff; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.06); padding:32px 20px; text-align:center;">
+            <i class='bx bx-history' style="font-size:2.5rem; color:#4caf50;"></i>
+            <h3 style="margin:16px 0 8px 0; color:#333;">Location History</h3>
+            <p style="color:#555;">View detailed movement history and reports for better analysis and planning.</p>
+          </div>
+          <div class="feature-box" style="background:#fff; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.06); padding:32px 20px; text-align:center;">
+            <i class='bx bx-shield-quarter' style="font-size:2.5rem; color:#4caf50;"></i>
+            <h3 style="margin:16px 0 8px 0; color:#333;">Data Security</h3>
+            <p style="color:#555;">Your data is encrypted and protected, ensuring privacy and secure access at all times.</p>
+          </div>
+          <div class="feature-box" style="background:#fff; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.06); padding:32px 20px; text-align:center;">
+            <i class='bx bx-mobile-alt' style="font-size:2.5rem; color:#4caf50;"></i>
+            <h3 style="margin:16px 0 8px 0; color:#333;">Mobile Friendly</h3>
+            <p style="color:#555;">Access tracking features from any device—desktop, tablet, or mobile—for convenience on the go.</p>
+          </div>
+          <div class="feature-box" style="background:#fff; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.06); padding:32px 20px; text-align:center;">
+            <i class='bx bx-customize' style="font-size:2.5rem; color:#4caf50;"></i>
+            <h3 style="margin:16px 0 8px 0; color:#333;">Customizable Settings</h3>
+            <p style="color:#555;">Personalize your tracking experience with customizable alerts, map views, and user preferences.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Why Us Section -->
+    <section id="whyus" class="advantages-section">
+      <h2>Why Us?</h2>
       <div class="advantages-container">
         <div class="advantage-box">
           <h3>1. Real-Time Location</h3>
@@ -136,7 +193,7 @@
           <h3>Quick Links</h3>
           <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#features">Features</a></li>
+            <li><a href="#features" class="nav-features">Features</a></li>
             <li><a href="/html/contact.html">Contact</a></li>
             <li><a href="#privacy">Privacy Policy</a></li>
             <li><a href="/html/login.html">login</a></li>
@@ -203,5 +260,89 @@
       domain="www.chatbase.co"
       defer
     ></script>
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Back to Top">
+      <i class='bx bx-chevron-up'></i>
+    </button>
+    <script src="/js/darkmode-shared.js"></script>
+    <script>
+      // Back to Top Button Logic
+      const backToTopBtn = document.getElementById('back-to-top');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+          backToTopBtn.style.display = 'block';
+        } else {
+          backToTopBtn.style.display = 'none';
+        }
+        // Highlight nav links on scroll
+        const aboutSection = document.getElementById('about');
+        const whyusSection = document.getElementById('whyus');
+        const featuresSection = document.getElementById('features');
+        const navAbout = document.querySelector('.nav-about');
+        const navWhyus = document.querySelector('.nav-whyus');
+        const navFeatures = document.querySelector('.nav-features');
+        if (aboutSection && navAbout && window.scrollY >= aboutSection.offsetTop - 80 && window.scrollY < featuresSection.offsetTop - 80) {
+          navAbout.classList.add('active');
+        } else {
+          navAbout.classList.remove('active');
+        }
+        if (featuresSection && navFeatures && window.scrollY >= featuresSection.offsetTop - 80 && window.scrollY < whyusSection.offsetTop - 80) {
+          navFeatures.classList.add('active');
+        } else {
+          navFeatures.classList.remove('active');
+        }
+        if (whyusSection && navWhyus && window.scrollY >= whyusSection.offsetTop - 80) {
+          navWhyus.classList.add('active');
+        } else {
+          navWhyus.classList.remove('active');
+        }
+      });
+      backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+      // Smooth scroll for About/Why Us nav links
+      document.querySelectorAll('.nav-about, .nav-whyus, .nav-features').forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href').replace('#', '');
+          const targetSection = document.getElementById(targetId);
+          if (targetSection) {
+            window.scrollTo({ top: targetSection.offsetTop - 60, behavior: 'smooth' });
+          }
+        });
+      });
+    </script>
+    <style>
+      #back-to-top {
+        display: none;
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        z-index: 1000;
+        background: #4caf50;
+        color: #fff;
+        border: none;
+        outline: none;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+        font-size: 2rem;
+        cursor: pointer;
+        transition: background 0.3s, color 0.3s;
+      }
+      #back-to-top:hover {
+        background: #222;
+        color: #b7ff00;
+      }
+      .dark-mode #back-to-top {
+        background: #222;
+        color: #b7ff00;
+      }
+      .dark-mode #back-to-top:hover {
+        background: #4caf50;
+        color: #fff;
+      }
+    </style>
   </body>
 </html>

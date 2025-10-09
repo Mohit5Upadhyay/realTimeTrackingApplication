@@ -115,9 +115,77 @@ document.getElementById('contact-link').addEventListener('click', function(event
     window.location.href = '/html/contact.html'; // Redirect to the contact page
 });
 
+// Dark Mode Toggle Logic
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+const htmlElement = document.documentElement;
+const darkModeIcon = darkModeToggle.querySelector('i');
+
+function setDarkMode(enabled) {
+    if (enabled) {
+        htmlElement.classList.add('dark-mode');
+        localStorage.setItem('darkMode', 'enabled');
+        if (darkModeIcon) {
+            darkModeIcon.classList.remove('bx-moon');
+            darkModeIcon.classList.add('bx-sun');
+        }
+    } else {
+        htmlElement.classList.remove('dark-mode');
+        localStorage.setItem('darkMode', 'disabled');
+        if (darkModeIcon) {
+            darkModeIcon.classList.remove('bx-sun');
+            darkModeIcon.classList.add('bx-moon');
+        }
+    }
+}
+
+darkModeToggle.addEventListener('click', () => {
+    const isDark = htmlElement.classList.contains('dark-mode');
+    setDarkMode(!isDark);
+});
+
+// On page load, set mode based on localStorage or system preference
+(function initializeDarkMode() {
+    const userPref = localStorage.getItem('darkMode');
+    if (userPref === 'enabled') {
+        setDarkMode(true);
+    } else if (userPref === 'disabled') {
+        setDarkMode(false);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        setDarkMode(true);
+    } else {
+        setDarkMode(false);
+    }
+})();
+
 
 //redirecting to the contact us page from the index page
 document.getElementById('register-link').addEventListener('click', function(event) {
     event.preventDefault(); // Prevent the default link behavior
     window.location.href = '/html/registter.html'; // Redirect to the contact page
+});
+
+// Dark Mode Toggle
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+const body = document.body;
+const icon = darkModeToggle.querySelector('i');
+
+// Check for saved theme preference or default to light mode
+const currentTheme = localStorage.getItem('theme') || 'light';
+if (currentTheme === 'dark') {
+  body.classList.add('dark-mode');
+  icon.classList.remove('bx-moon');
+  icon.classList.add('bx-sun');
+}
+
+darkModeToggle.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+  const theme = body.classList.contains('dark-mode') ? 'dark' : 'light';
+  localStorage.setItem('theme', theme);
+  if (theme === 'dark') {
+    icon.classList.remove('bx-moon');
+    icon.classList.add('bx-sun');
+  } else {
+    icon.classList.remove('bx-sun');
+    icon.classList.add('bx-moon');
+  }
 });
